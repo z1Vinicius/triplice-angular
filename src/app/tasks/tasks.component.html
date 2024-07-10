@@ -1,4 +1,7 @@
 <div>
-  <p>Título - {{ title }}</p>
-  <button (dblclick)="hasTasks()">Existem tarefas?</button>
+  @switch (favoriteDay) { @case ("Sunday") {
+  <p>A depressaum</p>
+  } @case ("Friday") {
+  <p>Pensando em mimir</p>
+  } @default {Só existindo} }
 </div>

@@ -1,9 +1,12 @@
 <div>
-  <img
-    [src]="lanternAssets[lanternStatus]"
-    style="width: auto; height: 200px"
-  />
-  <button [disabled]="false" (click)="toggleLantern()">
-    Alternar Lanterna
-  </button>
+  <div *ngIf="!disabled">
+    <img
+      [src]="lanternAssets[lanternStatus]"
+      style="width: auto; height: 200px"
+    />
+    <button [disabled]="false" (click)="toggleLantern()">
+      Alternar Lanterna
+    </button>
+  </div>
+  <button (click)="disableLantern()">Deletar Lanterna</button>
 </div>
